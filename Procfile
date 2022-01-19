@@ -1,1 +1,1 @@
-web: npm run start-prod
+break the build
