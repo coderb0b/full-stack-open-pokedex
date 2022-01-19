@@ -33,3 +33,5 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "guarded-lowlands-80731"
           heroku_email: "jari.silvo@cs.helsinki.fi"
+          healthcheck: "https://guarded-lowlands-80731.herokuapp.com/health/"
+          checkstring: "ok"
