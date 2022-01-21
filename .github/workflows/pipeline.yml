@@ -65,4 +65,4 @@ jobs:
         run: echo "$COMMIT_MESSAGES"
       - name: testing contains
         if: ${{ !contains(github.event.commits.*.message, '#skip') }}
-        run: echo "no skip"
+        run: echo "no skipping"
