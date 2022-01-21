@@ -40,6 +40,9 @@ jobs:
           healthcheck: "https://guarded-lowlands-80731.herokuapp.com/health/"
           checkstring: "ok"
           rollbackonhealthcheckfailed: true
+  version_tagging:
+    runs-on: ubuntu-18.04
+    steps:
       - name: Bump version and push tag
         if: ${{ github.event_name == 'push' }}
         uses: anothrNick/github-tag-action@1.33.0
